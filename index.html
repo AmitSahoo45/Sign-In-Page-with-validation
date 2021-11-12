@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Sign up</title>
+
+  <!--Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  </style>
+</head>
+
+<body>
+  <section class="login-box">
+    <div class="left-box">
+      <div class="text-box">
+        <h1>Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="left-container">
+        <div class="hdr-box">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <div class="form-container-box">
+          <div class="form-box">
+            <form action="/sign-in.php" target="_blank" autocomplete="on" method="get">
+
+              <div class="firstname input-css">
+                <input type="text" name="fname" id="first-name" class="inputform" placeholder="Enter First Name"
+                  required />
+                <p class="incorrect"><em>First Name cannot be empty</em></p>
+              </div>
+
+              <div class="lastname input-css">
+                <input type="text" name="lname" id="last-name" class="inputform" placeholder="Enter Last Name"
+                  required />
+                <p class="incorrect"><em>Last Name cannot be empty</em></p>
+              </div>
+
+              <div class="email-address input-css">
+                <input type="email" name="email" id="email" class="inputform" placeholder="Enter Email Address"
+                  required />
+                <p class="incorrect"><em>Looks like this is not an email</em></p>
+              </div>
+
+              <div class="password input-css">
+                <i class="far fa-eye" id="togglePassword"></i>
+                <input type="password" name="password" id="password" class="inputform" placeholder='Enter Password'
+                  required autocomplete="on" />
+                <p class="incorrect"><em>Password cannot be empty</em></p>
+              </div>
+              <!-- <div class=></div> -->
+              <!-- <i class="fas fa-eye-slash"></i> -->
+              <div class="submit-btn">
+                <button type="submit" name="sign-in-info" class="signinsubmit">CLAIM YOUR FREE TRAIL</button>
+              </div>
+            </form>
+          </div>
+          <p>By clicking the button, you are agreeing to our Terms and Services</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/2fd2b74342.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
