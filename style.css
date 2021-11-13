@@ -17,6 +17,7 @@ body {
     background: url(/images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -144,18 +145,18 @@ body {
     border: 2px solid var(--Red) !important;
 }
 
-.form-container-box p:last-child {
+.tnc {
     text-align: center;
     font-size: 0.8rem;
     color: var(--Grayish-Blue);
 }
 
-.form-container-box p:last-child a {
+.tnc {
     font-weight: bolder;
     color: var(--Red);
 }
 
-.form-container-box p:last-child a:hover {
+.tnc {
     text-decoration: none;
 }
 
