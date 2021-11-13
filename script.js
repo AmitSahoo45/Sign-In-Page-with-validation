@@ -21,24 +21,25 @@ document.getElementById("togglePassword").addEventListener("click", () => {
 const inputform = document.querySelectorAll('.inputform');
 
 inputform.forEach((input) => {
-    input.addEventListener("invalid", (events) => {
+    input.addEventListener("invalid", () => {
         console.log("invalid");
         if (input.value == '') {
             input.nextElementSibling.classList.add("show");
             input.classList.add("inputbox");
         }
-    })
+    });
 
     input.addEventListener('blur', (event) => {
-        if(input.checkValidity()){
-            input.classList.remove("inputbox")
+        if (input.checkValidity()) {
+            input.classList.remove("inputbox");
+            input.nextElementSibling.classList.remove("show");
         }
+    });
+
+    input.addEventListener('focus', () => {
+        input.classList.remove("inputbox");
+        input.nextElementSibling.classList.remove("show");
     })
 
-    // input.addEventListener("focus", () => {
-    //     if (input.classList.contains("show")) {
-    //         input.nextElementSibling.classList.remove("show");
-    //         input.classList.remove("inputbox")
-    //     }
-    // })
+
 })

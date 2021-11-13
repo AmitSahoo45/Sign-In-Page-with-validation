@@ -141,5 +141,72 @@ body {
 }
 
 .inputbox {
-    border: 2px solid var(--Red)!important;
+    border: 2px solid var(--Red) !important;
+}
+
+.form-container-box p:last-child {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--Grayish-Blue);
+}
+
+.form-container-box p:last-child a {
+    font-weight: bolder;
+    color: var(--Red);
+}
+
+.form-container-box p:last-child a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width : 990px) {
+    .form-container-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .password i {
+        top: 18px;
+        right: 20px;
+    }
+}
+
+@media (max-width : 790px) {
+    body {
+        background: url(/images/bg-intro-mobile.png);
+        background-color: var(--Red);
+    }
+
+    .login-box {
+        margin: 0 0 2rem 0;
+        flex-direction: column;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100vw;
+    }
+
+    .text-box {
+        width: 70vw;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    .left-container {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .input-css input {
+        width: 75vw;
+    }
+
+    .password i {
+        right: 35px;
+    }
+
+    .submit-btn button {
+        width: 75vw;
+    }
 }
